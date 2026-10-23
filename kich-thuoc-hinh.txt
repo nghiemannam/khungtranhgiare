@@ -1,0 +1,61 @@
+KÍCH THƯỚC HÌNH WEBP - dùng khai báo width/height trong code
+
+Tất cả 51 hình: 1000 x 1000 px (ảnh không vuông đã thêm nền trắng 2 bên)
+
+Tên file                                        Rộng x Cao (px)   Dung lượng
+bat-goc-khung-hinh.webp                         1000 x 1000       80 KB
+bat-khung-doi.webp                              1000 x 1000       124 KB
+bat-lien-xo-mem.webp                            1000 x 1000       105 KB
+bong-giua-khung-doi.webp                        1000 x 1000       99 KB
+bong-goc-khung-doi.webp                         1000 x 1000       109 KB
+bong-khung-doi.webp                             1000 x 1000       114 KB
+chan-chong-so-1-a-nho-den.webp                  1000 x 1000       95 KB
+chan-chong-so-3-a-lon-trang.webp                1000 x 1000       85 KB
+chan-chong-so-5-ca-vat.webp                     1000 x 1000       97 KB
+day-9-li-mau-vang.webp                          1000 x 1000       144 KB
+dinh-ep-goc-khung-hinh.webp                     1000 x 1000       113 KB
+gia-ve-go.webp                                  1000 x 1000       93 KB
+gia-ve-tranh-ke-de-tranh.webp                   1000 x 1000       86 KB
+hat-dua.webp                                    1000 x 1000       117 KB
+ke-goc-so-1.webp                                1000 x 1000       96 KB
+keo-xit-tranh-da.webp                           1000 x 1000       128 KB
+khung-anh-a4-21x30cm-mau-trang.webp             1000 x 1000       122 KB
+khung-anh-a4-21x30cm-mau-vang.webp              1000 x 1000       131 KB
+khung-anh-mica-trong-suot-01.webp               1000 x 1000       127 KB
+khung-anh-mica-trong-suot-02.webp               1000 x 1000       137 KB
+khung-ao-dau-50x70cm.webp                       1000 x 1000       105 KB
+khung-ao-dau.webp                               1000 x 1000       97 KB
+khung-bang-khen-a4-mau-go.webp                  1000 x 1000       78 KB
+khung-bang-khen-a4-mau-vang-den.webp            1000 x 1000       94 KB
+khung-bang-khen-a4-mau-vang.webp                1000 x 1000       119 KB
+khung-chung-nhan.webp                           1000 x 1000       82 KB
+khung-hinh-a4-mau-bac.webp                      1000 x 1000       69 KB
+khung-hinh-a4-mau-trang.webp                    1000 x 1000       66 KB
+khung-hinh-treo-tuong-mau-den-vien-nho.webp     1000 x 1000       85 KB
+khung-hinh-treo-tuong-mau-den.webp              1000 x 1000       80 KB
+khung-hinh-treo-tuong-mau-go.webp               1000 x 1000       94 KB
+khung-hinh-treo-tuong-mau-hong.webp             1000 x 1000       76 KB
+khung-hinh-treo-tuong-mau-nau.webp              1000 x 1000       98 KB
+khung-hinh-treo-tuong-mau-trang.webp            1000 x 1000       64 KB
+khung-hinh-treo-tuong-mau-xanh-duong.webp       1000 x 1000       76 KB
+khung-hinh-treo-tuong-mau-xanh-la.webp          1000 x 1000       82 KB
+kim-bam-viet-duc.webp                           1000 x 1000       129 KB
+luoi-cua-freud.webp                             1000 x 1000       126 KB
+mang-pe-2-5-tac.webp                            1000 x 1000       96 KB
+mang-pe-50cm.webp                               1000 x 1000       98 KB
+moc-2-lo-lon.webp                               1000 x 1000       101 KB
+moc-4-lo.webp                                   1000 x 1000       90 KB
+moc-treo-tam-giac.webp                          1000 x 1000       124 KB
+sung-ban-dinh-la-bang-hoi-dung-khi-nen.webp     1000 x 1000       99 KB
+sung-ban-dinh-la-bang-hoi.webp                  1000 x 1000       124 KB
+tranh-chua-giesu-60x120cm.webp                  1000 x 1000       132 KB
+tranh-duc-me-60x120cm.webp                      1000 x 1000       129 KB
+tranh-phat-a-di-da-60x120cm.webp                1000 x 1000       187 KB
+tranh-phat-a-di-da-ao-do-60x120cm.webp          1000 x 1000       141 KB
+tranh-phat-a-di-da-ao-vang-60x120cm.webp        1000 x 1000       146 KB
+vit-ban-khung-tranh.webp                        1000 x 1000       103 KB
+
+Tổng: 51 hình | 5.3 MB
+
+Khai báo trong code:
+<img src="sanpham/hình-webp/ten-file.webp" width="1000" height="1000" alt="..." loading="lazy">
