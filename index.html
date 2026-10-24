@@ -1622,11 +1622,19 @@ function pacoCapNhatHiddenSp() {
             <div style="margin-bottom:15px;">
                 <input type="text" name="Địa chỉ nhận hàng" style="width:100%;padding:12px 15px;border:1px solid #ccc;border-radius:8px;font-size:16px;box-sizing:border-box;display:block;background-color:#fafafa;color:#1a1a1a;" placeholder="Địa chỉ chi tiết" required>
             </div>
-            <input type="hidden" name="Nguon_Don" value="Trang chủ">
             <div style="display:none;"><input type="text" name="confirm_email" value=""></div>
-            <input type="hidden" name="San_Pham_Da_Chon" id="paco-sach-da-chon-hidden" value="">
-            <div id="paco-sp-da-chon-wrap" style="display:none;text-align:center;margin:0 0 10px 0;">
-                <div id="paco-sp-da-chon-list" style="font-size:13px;color:#1a1a1a;"></div>
+            <div id="nkt-gio-form" style="border:1px solid #ccc;border-radius:8px;padding:12px;margin-bottom:15px;background:#fafafa;">
+                <div style="font-size:15px;font-weight:bold;color:#008080;margin-bottom:8px;">🛒 Sản phẩm muốn đặt</div>
+                <div id="nkt-gio-list" style="font-size:14px;color:#1a1a1a;"></div>
+                <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap;">
+                    <select id="nkt-gio-chon" aria-label="Chọn sản phẩm" style="flex:1 1 180px;min-width:0;padding:10px;border:1px solid #ccc;border-radius:6px;font-size:15px;background:#fff;color:#1a1a1a;"><option value="">-- Chọn sản phẩm --</option><optgroup label="Khung hình - Khung ảnh"><option>Khung hình treo tường màu trắng</option><option>Khung hình treo tường màu đen</option><option>Khung hình treo tường màu đen viền nhỏ</option><option>Khung hình treo tường màu nâu</option><option>Khung hình treo tường màu vân gỗ</option><option>Khung hình treo tường màu xanh dương</option><option>Khung hình treo tường màu xanh lá</option><option>Khung hình treo tường màu hồng</option><option>Khung ảnh A4 21x30cm màu trắng</option><option>Khung ảnh A4 21x30cm màu vàng</option><option>Khung bằng khen A4 màu vàng</option><option>Khung bằng khen A4 màu vàng đen</option><option>Khung bằng khen A4 màu gỗ</option><option>Khung hình A4 màu bạc</option><option>Khung hình A4 màu trắng</option><option>Khung chứng nhận màu vàng</option><option>Khung ảnh mica trong suốt mẫu 01</option><option>Khung ảnh mica trong suốt mẫu 02</option></optgroup><optgroup label="Khung áo đấu"><option>Khung áo đấu 50x70cm</option><option>Khung áo đấu</option></optgroup><optgroup label="Tranh treo tường"><option>Tranh Phật A Di Đà 60x120cm</option><option>Tranh Phật A Di Đà áo đỏ 60x120cm</option><option>Tranh Phật A Di Đà áo vàng 60x120cm</option><option>Tranh Chúa Giêsu 60x120cm</option><option>Tranh Đức Mẹ 60x120cm</option></optgroup><optgroup label="Dụng cụ - Vật tư"><option>Súng bắn đinh lá bằng hơi</option><option>Súng bắn đinh lá bằng hơi dùng khí nén</option><option>Lưỡi cưa Freud</option><option>Keo xịt tranh đá 350ml</option><option>Màng PE quấn đóng gói 50cm</option><option>Màng PE quấn đóng gói 2.5 tấc</option><option>Giá vẽ gỗ chữ A</option><option>Giá vẽ tranh - kệ để tranh</option></optgroup><optgroup label="Phụ kiện khung tranh"><option>Chân chống số 1 (A nhỏ đen)</option><option>Chân chống số 3 (A lớn trắng)</option><option>Chân chống số 5 (cà vạt)</option><option>Móc 4 lỗ</option><option>Móc 2 lỗ lớn</option><option>Móc treo tam giác</option><option>Hạt dưa treo khung tranh</option><option>Bát góc khung hình</option><option>Bát liên xô mềm</option><option>Bát khung đôi</option><option>Ke góc số 1</option><option>Đinh ép góc khung hình V7, V10</option><option>Vít bắn khung tranh</option><option>Kim bấm Việt Đức</option><option>Dây 9 li màu vàng</option><option>Bông khung đôi (bông giữa - bông góc)</option><option>Bông góc khung đôi</option><option>Bông giữa khung đôi</option></optgroup></select>
+                    <input type="number" id="nkt-gio-sl" value="1" min="1" aria-label="Số lượng" style="width:64px;padding:10px;border:1px solid #ccc;border-radius:6px;font-size:15px;text-align:center;box-sizing:border-box;">
+                    <button type="button" id="nkt-gio-btn" style="padding:10px 14px;border:0;border-radius:6px;background:#008080;color:#fff;font-size:15px;font-weight:bold;cursor:pointer;">+ Thêm</button>
+                </div>
+                <div id="nkt-gio-loi" style="display:none;color:#b30000;font-size:13px;font-weight:bold;margin-top:8px;">Vui lòng chọn ít nhất 1 sản phẩm và bấm "+ Thêm".</div>
+            </div>
+            <div style="margin-bottom:15px;">
+                <textarea name="Ghi chú" rows="3" style="width:100%;padding:12px 15px;border:1px solid #ccc;border-radius:8px;font-size:16px;box-sizing:border-box;display:block;background-color:#fafafa;color:#1a1a1a;font-family:inherit;" placeholder="Ghi chú: kích thước, màu, thời gian nhận hàng... (không bắt buộc)"></textarea>
             </div>
             <div style="text-align:center;margin:15px 0;">
                 <div style="width:40px;height:1px;background:#ccc;margin:0 auto 12px;"></div>
@@ -2170,6 +2178,34 @@ window.addEventListener('load', function() {
 
 </script>
 
+<!-- Giỏ hàng trong form đặt hàng -->
+<script>
+(function(){
+    var list=document.getElementById('nkt-gio-list'); if(!list) return;
+    function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+    window.nktVeGioForm=function(){
+        var g=window.nktGio.doc(),ten=Object.keys(g);
+        if(!ten.length){list.innerHTML='<div style="color:#777;font-size:13px;">Chưa có sản phẩm. Chọn sản phẩm bên dưới rồi bấm "+ Thêm".</div>';return;}
+        document.getElementById('nkt-gio-loi').style.display='none';
+        list.innerHTML=ten.map(function(t,i){return '<div style="display:flex;align-items:center;gap:6px;padding:5px 0;border-bottom:1px dashed #ddd;">'
+            +'<span style="flex:1;">'+(i+1)+'. '+esc(t)+'</span>'
+            +'<input type="number" min="1" value="'+g[t]+'" data-ten="'+esc(t)+'" class="nkt-gio-sua" aria-label="Số lượng" style="width:56px;padding:6px;border:1px solid #ccc;border-radius:4px;text-align:center;font-size:14px;">'
+            +'<button type="button" data-ten="'+esc(t)+'" class="nkt-gio-xoa" aria-label="Bỏ sản phẩm" style="border:0;background:#b30000;color:#fff;border-radius:4px;width:30px;height:30px;font-size:16px;cursor:pointer;">×</button></div>';}).join('');
+    };
+    list.addEventListener('change',function(e){if(e.target.classList.contains('nkt-gio-sua')){window.nktGio.datSL(e.target.getAttribute('data-ten'),Math.max(0,parseInt(e.target.value,10)||0));}});
+    list.addEventListener('click',function(e){if(e.target.classList.contains('nkt-gio-xoa')){window.nktGio.datSL(e.target.getAttribute('data-ten'),0);}});
+    document.getElementById('nkt-gio-btn').addEventListener('click',function(){
+        var c=document.getElementById('nkt-gio-chon'),sl=Math.max(1,parseInt(document.getElementById('nkt-gio-sl').value,10)||1);
+        if(!c.value){c.focus();return;}
+        window.nktGio.them(c.value,sl);c.value='';document.getElementById('nkt-gio-sl').value=1;
+    });
+    window.nktGioTrong=function(){var trong=!Object.keys(window.nktGio.doc()).length;
+        if(trong){document.getElementById('nkt-gio-loi').style.display='block';document.getElementById('nkt-gio-form').scrollIntoView({behavior:'smooth',block:'center'});}
+        return trong;};
+    window.nktGioChuoi=function(){var g=window.nktGio.doc();return Object.keys(g).map(function(t,i){return (i+1)+'. '+t+' - SL: '+g[t];}).join(' | ');};
+    if(window.nktGio) window.nktVeGioForm(); else document.addEventListener('DOMContentLoaded',window.nktVeGioForm);
+})();
+</script>
 <!-- Script 6: Gửi form -->
 <script>
 var clientIP = "";
@@ -2182,6 +2218,11 @@ document.addEventListener("DOMContentLoaded",function(){
             var formData=new FormData(pacoForm);
             if((formData.get('confirm_email')||'').trim()!==''){submitBtn.disabled=false;submitBtn.innerHTML="HOÀN TẤT ĐẶT HÀNG";return;}
             formData.delete('confirm_email');
+            if(window.nktGioTrong&&window.nktGioTrong()){submitBtn.disabled=false;submitBtn.innerHTML="HOÀN TẤT ĐẶT HÀNG";return;}
+            var fd2=new FormData();
+            fd2.append("Sản phẩm đặt",window.nktGioChuoi());
+            formData.forEach(function(v,k){fd2.append(k,v);});
+            formData=fd2;
             formData.append("IP",clientIP);
             formData.append("_subject","ĐƠN HÀNG MỚI - khungtranhgiare.com - "+(formData.get('Họ và Tên')||''));
             formData.append("_template","table");
@@ -2191,7 +2232,7 @@ document.addEventListener("DOMContentLoaded",function(){
             .then(function(r){return r.json();})
             .then(function(d){
                 if(String(d.success)!=='true') throw new Error(d.message||'Gửi lỗi');
-                msg.classList.remove('hidden');submitBtn.innerHTML="ĐƠN HÀNG ĐÃ GỬI THÀNH CÔNG - Cảm ơn";pacoForm.reset();
+                msg.classList.remove('hidden');submitBtn.innerHTML="ĐƠN HÀNG ĐÃ GỬI THÀNH CÔNG - Cảm ơn";pacoForm.reset();if(window.nktGio)window.nktGio.xoaHet();
                 setTimeout(function(){submitBtn.disabled=false;submitBtn.innerHTML="HOÀN TẤT ĐẶT HÀNG";msg.classList.add('hidden');},5000);
             }).catch(function(err){submitBtn.disabled=false;submitBtn.innerHTML="GỬI LỖI - GỌI 0979.569.915";console.error('Lỗi:',err);});
         });
@@ -2243,6 +2284,7 @@ window.addEventListener('load',function(){
             if(!verifyInput.value||verifyInput.value!==submitBtn.getAttribute('data-code')){e.preventDefault();e.stopImmediatePropagation();verifyInput.setCustomValidity("Mã xác nhận chưa chính xác!");verifyInput.reportValidity();return;}
         }
         if(!pacoForm.checkValidity())return;
+        if(window.nktGioTrong&&window.nktGioTrong()){e.preventDefault();e.stopImmediatePropagation();return;}
         data.count++;localStorage.setItem(storageKey,JSON.stringify(data));
         if(data.count>=LIMIT_LOCK){lockUntil=Date.now()+(LOCK_MINUTES*60000);localStorage.setItem(lockKey,lockUntil);}
         else if(data.count>=LIMIT_CAPTCHA){renderGuard();}
@@ -2316,5 +2358,23 @@ function pacoToggleReadmore(contentId, btnId) {
 </script>
 
 
+<!-- Giỏ hàng chung: lưu trong trình duyệt, giữ khi chuyển trang -->
+<script id="nkt-gio-hang">
+(function(){
+    var K='nkt_gio_hang';
+    function doc(){try{var g=JSON.parse(localStorage.getItem(K));return g&&typeof g==='object'?g:{};}catch(e){return window.__nktGio||{};}}
+    function capNhatSo(){var g=doc(),t=0;for(var k in g)t+=g[k];var el=document.getElementById('paco-cart-count');if(el){el.textContent=t;el.style.display=t>0?'block':'none';}}
+    function luu(g){window.__nktGio=g;try{localStorage.setItem(K,JSON.stringify(g));}catch(e){}capNhatSo();if(window.nktVeGioForm)window.nktVeGioForm();}
+    window.nktGio={doc:doc,luu:luu,
+        them:function(ten,sl){var g=doc();g[ten]=(g[ten]||0)+(sl||1);luu(g);},
+        datSL:function(ten,sl){var g=doc();if(sl>0)g[ten]=sl;else delete g[ten];luu(g);},
+        xoaHet:function(){luu({});}};
+    function baoDaThem(b){if(!b||b.tagName!=='BUTTON')return;var cu=b.textContent;b.textContent='Đã thêm ✓';setTimeout(function(){b.textContent=cu;},1500);}
+    window.pacoAddToCart=function(ten){window.nktGio.them(ten,1);baoDaThem(window.event&&window.event.target);};
+    window.nktAddToCart=function(btn,ten){var i=btn.parentNode.querySelector('.nkt-sp-qty input');var sl=Math.max(1,parseInt(i&&i.value,10)||1);window.nktGio.them(ten,sl);baoDaThem(btn);};
+    window.addEventListener('storage',function(e){if(e.key===K){capNhatSo();if(window.nktVeGioForm)window.nktVeGioForm();}});
+    if(document.readyState!=='loading')capNhatSo();else document.addEventListener('DOMContentLoaded',capNhatSo);
+})();
+</script>
 </body>
 </html>

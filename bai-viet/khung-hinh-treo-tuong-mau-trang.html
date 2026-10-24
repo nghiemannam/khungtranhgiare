@@ -1121,5 +1121,23 @@ window.addEventListener('load', function() {
   "sameAs": ["https://www.facebook.com/namkhungtranh","https://www.youtube.com/@namkhungtranh"]
 }
 </script>
+<!-- Giỏ hàng chung: lưu trong trình duyệt, giữ khi chuyển trang -->
+<script id="nkt-gio-hang">
+(function(){
+    var K='nkt_gio_hang';
+    function doc(){try{var g=JSON.parse(localStorage.getItem(K));return g&&typeof g==='object'?g:{};}catch(e){return window.__nktGio||{};}}
+    function capNhatSo(){var g=doc(),t=0;for(var k in g)t+=g[k];var el=document.getElementById('paco-cart-count');if(el){el.textContent=t;el.style.display=t>0?'block':'none';}}
+    function luu(g){window.__nktGio=g;try{localStorage.setItem(K,JSON.stringify(g));}catch(e){}capNhatSo();if(window.nktVeGioForm)window.nktVeGioForm();}
+    window.nktGio={doc:doc,luu:luu,
+        them:function(ten,sl){var g=doc();g[ten]=(g[ten]||0)+(sl||1);luu(g);},
+        datSL:function(ten,sl){var g=doc();if(sl>0)g[ten]=sl;else delete g[ten];luu(g);},
+        xoaHet:function(){luu({});}};
+    function baoDaThem(b){if(!b||b.tagName!=='BUTTON')return;var cu=b.textContent;b.textContent='Đã thêm ✓';setTimeout(function(){b.textContent=cu;},1500);}
+    window.pacoAddToCart=function(ten){window.nktGio.them(ten,1);baoDaThem(window.event&&window.event.target);};
+    window.nktAddToCart=function(btn,ten){var i=btn.parentNode.querySelector('.nkt-sp-qty input');var sl=Math.max(1,parseInt(i&&i.value,10)||1);window.nktGio.them(ten,sl);baoDaThem(btn);};
+    window.addEventListener('storage',function(e){if(e.key===K){capNhatSo();if(window.nktVeGioForm)window.nktVeGioForm();}});
+    if(document.readyState!=='loading')capNhatSo();else document.addEventListener('DOMContentLoaded',capNhatSo);
+})();
+</script>
 </body>
 </html>
