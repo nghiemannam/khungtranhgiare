@@ -1170,7 +1170,7 @@ window.addEventListener('load', function() {
             .then(function (d) {
                 var so = parseInt(d.value, 10);
                 if (isNaN(so)) { counterEl.textContent = '--'; return; }
-                counterEl.textContent = so.toLocaleString('vi-VN');
+                counterEl.textContent = (so + 10000).toLocaleString('vi-VN'); // hiển thị = số thật + 10.000
                 try { sessionStorage.setItem('nkt_da_dem', '1'); } catch (e) {}
             })
             .catch(function () { counterEl.textContent = '--'; });
