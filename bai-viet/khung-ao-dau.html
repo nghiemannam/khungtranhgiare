@@ -1084,16 +1084,20 @@ window.addEventListener('load', function() {
 // 2. Bộ đếm lấy số thực tế từ Sheet của Ông Paco (Thay thế hoàn toàn API cũ)
     const counterEl = document.getElementById('paco-counter');
     if (counterEl) {
-        fetch('DIEN_LINK_APPS_SCRIPT_BO_DEM_CUA_BAN')
-            .then(res => res.text())
-            .then(data => {
-                // data chính là con số chính xác lấy từ ô A2 của Ông
-                counterEl.textContent = parseInt(data).toLocaleString('vi-VN');
+        // Bộ đếm lượt truy cập thực tế: mỗi khách tính 1 lượt / 1 lần vào web (phiên trình duyệt)
+        var CKEY = 'khungtranhgiare-com-luot-truy-cap';
+        var CAPI = 'https://countapi.mileshilliard.com/api/v1/';
+        var daDem = false;
+        try { daDem = sessionStorage.getItem('nkt_da_dem') === '1'; } catch (e) {}
+        fetch(CAPI + (daDem ? 'get/' : 'hit/') + CKEY)
+            .then(function (r) { return r.json(); })
+            .then(function (d) {
+                var so = parseInt(d.value, 10);
+                if (isNaN(so)) { counterEl.textContent = '--'; return; }
+                counterEl.textContent = so.toLocaleString('vi-VN');
+                try { sessionStorage.setItem('nkt_da_dem', '1'); } catch (e) {}
             })
-            .catch(() => { 
-                // Nếu mạng lỗi, giữ nguyên số cũ, không nhảy bậy
-                console.log("Lỗi kết nối máy chủ bộ đếm");
-            });
+            .catch(function () { counterEl.textContent = '--'; });
     }
 });
 
