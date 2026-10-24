@@ -1,3 +1,5 @@
+> NGỪNG DÙNG từ 24/10/2026. Các từ khoá còn lại đã chuyển sang seo/hang-doi-tu-khoa.md.
+
 # Kế hoạch SEO hằng ngày: "khung bằng khen a4"
 
 Trang chính (trang trụ cột): `bai-viet/khung-bang-khen-a4.html`

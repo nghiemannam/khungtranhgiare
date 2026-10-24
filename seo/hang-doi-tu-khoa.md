@@ -1,7 +1,8 @@
 # SEO tự động - hàng đợi từ khoá (3 bài/tuần: thứ 2, 4, 6)
 
 Website: https://khungtranhgiare.com (repo nghiemannam/khungtranhgiare, nhánh main).
-Nhóm "khung bằng khen A4" do việc tự động khác lo (seo/ke-hoach-khung-bang-khen-a4.md), KHÔNG viết trùng.
+Nhóm "khung bằng khen A4" đã chuyển vào hàng đợi này (file seo/ke-hoach-khung-bang-khen-a4.md ngừng dùng từ 24/10/2026).
+Không viết trùng chủ đề với bài đã có trong bai-viet/.
 
 ## Quy tắc mỗi lần chạy
 
@@ -33,12 +34,28 @@ Nhóm "khung bằng khen A4" do việc tự động khác lo (seo/ke-hoach-khung
 - [ ] thue-gia-ve-le-tot-nghiep | thuê giá vẽ lễ tốt nghiệp, sự kiện trường học
 - [ ] checklist-thue-gia-ve-su-kien | checklist chuẩn bị thuê giá vẽ sự kiện
 
+### Nhóm Khung bằng khen A4 (bài chính: bai-viet/khung-bang-khen-a4.html, danh mục #khung-hinh-khung-anh)
+- [ ] khung-giay-khen-a4-cho-hoc-sinh | khung giấy khen A4 cho học sinh
+- [ ] kich-thuoc-khung-bang-khen-a4 | kích thước khung bằng khen A4
+- [ ] khung-bang-khen-21x30 | khung bằng khen 21x30
+- [ ] khung-bang-khen-so-luong-lon-truong-hoc | mua khung bằng khen số lượng lớn cho trường học
+- [ ] khung-chung-nhan-a4-doanh-nghiep | khung chứng nhận A4 cho doanh nghiệp
+- [ ] cach-long-giay-khen-vao-khung | cách lồng giấy khen vào khung
+- [ ] khung-bang-khen-mica-hay-kinh | khung bằng khen mica hay kính
+- [ ] khung-giay-khen-treo-tuong-dep | khung giấy khen treo tường đẹp
+- [ ] khung-bang-khen-de-ban | khung bằng khen để bàn
+- [ ] khung-bang-khen-tan-phu-tphcm | khung bằng khen Tân Phú TPHCM
+- [ ] cach-treo-nhieu-khung-bang-khen | cách treo nhiều khung bằng khen lên tường
+- [ ] khung-giay-phep-kinh-doanh-a4 | khung giấy phép kinh doanh A4
+- [ ] khung-bang-khen-qua-tang-nhan-vien | quà tặng khung bằng khen tri ân nhân viên
+- [ ] cach-bao-quan-giay-khen | cách bảo quản giấy khen không bị ố vàng
+- [ ] khung-bang-khen-tot-nghiep | khung bằng khen tốt nghiệp
+
 ### Nhóm Khung hình - khung ảnh (danh mục #khung-hinh-khung-anh)
 - [ ] cach-treo-khung-anh-len-tuong | cách treo khung ảnh lên tường
 - [ ] khung-anh-treo-tuong-phong-khach | khung ảnh treo tường phòng khách
 - [ ] kich-thuoc-khung-anh-pho-bien | kích thước khung ảnh phổ biến
 - [ ] khung-anh-mica-de-ban-lam-qua | khung ảnh mica để bàn làm quà tặng
-- [ ] khung-giay-chung-nhan-van-phong | khung giấy chứng nhận cho văn phòng
 - [ ] cach-dong-khung-ao-bong-da | cách đóng khung áo bóng đá (danh mục #khung-ao-dau-danh-muc)
 
 ### Nhóm Giá vẽ tranh - bán (danh mục #gia-ve-tranh)
