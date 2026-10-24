@@ -2178,13 +2178,22 @@ document.addEventListener("DOMContentLoaded",function(){
     if(pacoForm){
         pacoForm.addEventListener('submit',function(e){
             e.preventDefault();
-            submitBtn.disabled=true;submitBtn.innerHTML="ĐÃ GỬI THÀNH CÔNG...";
-            var formData=new FormData(pacoForm);formData.append("IP",clientIP);
-            fetch("DIEN_LINK_APPS_SCRIPT_NHAN_DON_CUA_BAN",{method:'POST',mode:'no-cors',body:formData})
-            .then(function(){
+            submitBtn.disabled=true;
+            var formData=new FormData(pacoForm);
+            if((formData.get('confirm_email')||'').trim()!==''){submitBtn.disabled=false;submitBtn.innerHTML="HOÀN TẤT ĐẶT HÀNG";return;}
+            formData.delete('confirm_email');
+            formData.append("IP",clientIP);
+            formData.append("_subject","ĐƠN HÀNG MỚI - khungtranhgiare.com - "+(formData.get('Họ và Tên')||''));
+            formData.append("_template","table");
+            formData.append("_captcha","false");
+            submitBtn.innerHTML="ĐANG GỬI ĐƠN...";
+            fetch("https://formsubmit.co/ajax/namkhungtranh85@gmail.com",{method:'POST',headers:{'Accept':'application/json'},body:formData})
+            .then(function(r){return r.json();})
+            .then(function(d){
+                if(String(d.success)!=='true') throw new Error(d.message||'Gửi lỗi');
                 msg.classList.remove('hidden');submitBtn.innerHTML="ĐƠN HÀNG ĐÃ GỬI THÀNH CÔNG - Cảm ơn";pacoForm.reset();
                 setTimeout(function(){submitBtn.disabled=false;submitBtn.innerHTML="HOÀN TẤT ĐẶT HÀNG";msg.classList.add('hidden');},5000);
-            }).catch(function(err){submitBtn.disabled=false;submitBtn.innerHTML="THỬ LẠI";console.error('Lỗi:',err);});
+            }).catch(function(err){submitBtn.disabled=false;submitBtn.innerHTML="GỬI LỖI - GỌI 0979.569.915";console.error('Lỗi:',err);});
         });
     }
 });
