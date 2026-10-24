@@ -30,7 +30,7 @@ mỗi ngày thêm 1 bài viết phụ hữu ích (hoặc cải thiện 1 trang c
 
 ## Danh sách từ khoá
 
-- [ ] khung bằng khen a4 giá rẻ → `khung-bang-khen-a4-gia-re.html`
+- [x] khung bằng khen a4 giá rẻ → `khung-bang-khen-a4-gia-re.html`
 - [ ] khung giấy khen a4 cho học sinh → `khung-giay-khen-a4-cho-hoc-sinh.html`
 - [ ] kích thước khung bằng khen a4 → `kich-thuoc-khung-bang-khen-a4.html`
 - [ ] khung bằng khen a4 màu vàng → `khung-bang-khen-a4-mau-vang.html`
@@ -66,3 +66,4 @@ Khi hết danh sách: thêm 10 từ khoá dài liên quan mới (không trùng �
 - 2026-10-24: Đổi sanpham.html (bản trùng, canonical tên miền cũ) thành trang chuyển hướng về Chi-tiet-san-pham.html.
 - 2026-10-24: Viết lại trang trụ cột (~350 → ~1.460 chữ), thêm 6 câu hỏi thường gặp riêng
   về khung bằng khen A4 (kèm FAQ schema), thêm liên kết từ trang chủ, trang sản phẩm và bài A4.
+- 2026-10-24 (lần chạy 1): Bài mới "Khung bằng khen A4 giá rẻ" → bai-viet/khung-bang-khen-a4-gia-re.html (~980 chữ, 4 FAQ, 3 liên kết về trang trụ cột).
