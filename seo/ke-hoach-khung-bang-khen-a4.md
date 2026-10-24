@@ -63,5 +63,6 @@ Khi hết danh sách: thêm 10 từ khoá dài liên quan mới (không trùng �
 
 ## Nhật ký
 
+- 2026-10-24: Đổi sanpham.html (bản trùng, canonical tên miền cũ) thành trang chuyển hướng về Chi-tiet-san-pham.html.
 - 2026-10-24: Viết lại trang trụ cột (~350 → ~1.460 chữ), thêm 6 câu hỏi thường gặp riêng
   về khung bằng khen A4 (kèm FAQ schema), thêm liên kết từ trang chủ, trang sản phẩm và bài A4.
