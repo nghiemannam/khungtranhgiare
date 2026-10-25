@@ -176,7 +176,7 @@
 <style>
   img { pointer-events: none; -webkit-user-drag: none; user-select: none; }
 </style>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&text=NAMKHUNGTRANH%20&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Nunito:wght@800&text=Nam%20Khung%20TranhKHUNG%C4%90%E1%BA%B8PNH%C3%80%C6%A0%C2%B7&display=swap">
 <style>html,body{overflow-x:clip}</style>
 </head>
 <body>
@@ -316,30 +316,20 @@ body {
     }
 
     /* GIỮ NGUYÊN 100% LOGO CỦA ÔNG */
-    .paco-part, .books-part {
-        color: #008080;
-        font-family: 'Montserrat', Arial, sans-serif;
-        font-size: 21px;
-        font-weight: 800;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        text-decoration: none;
-        -webkit-text-stroke: 0;
-        text-shadow: none;
-    }
-    .paco-part { margin-right: 0.3em; }
+    .paco-brand { display: flex !important; align-items: center; justify-content: center; gap: 8px; line-height: 1 !important; padding: 6px 0 !important; }
+    .paco-brand img { width: 34px !important; height: 34px !important; margin: 0 !important; }
+    .nkt-brand { display: flex; flex-direction: column; align-items: center; }
+    .nkt-brand-name { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 700; font-size: 27px; line-height: 1.05; color: #0b5c5c; letter-spacing: .2px; }
+    .nkt-brand-tag { font-family: 'Nunito', Arial, sans-serif; font-weight: 800; font-size: 8.5px; letter-spacing: 2.4px; color: #c62828; margin-top: 3px; white-space: nowrap; }
+    @media (max-width: 360px) { .nkt-brand-name { font-size: 24px; } .nkt-brand-tag { font-size: 7.5px; letter-spacing: 2px; } }
 
-    .paco-brand:hover .paco-part, 
-    .paco-brand:hover .books-part {
-        display: inline-block;
-        transform: scale(1.02);
-        transition: 0.3s;
-    }
+    .nkt-brand { transition: transform .3s; }
+    .paco-brand:hover .nkt-brand { transform: scale(1.02); }
 </style>
 
 <div class="header-fixed-container">
     <a href="https://khungtranhgiare.com/" class="paco-brand">
-        <img src="../logo-nam-khung-tranh.webp" width="28" height="28" alt="Logo Nam Khung Tranh" style="vertical-align:middle;margin:-4px 6px 0 0;"><span class="paco-part">NAM</span><span class="books-part">KHUNG TRANH</span>
+        <img src="../logo-nam-khung-tranh.webp" width="34" height="34" alt="Logo Nam Khung Tranh" style="vertical-align:middle;margin:-4px 6px 0 0;"><span class="nkt-brand"><span class="nkt-brand-name">Nam Khung Tranh</span><span class="nkt-brand-tag">KHUNG ĐẸP · NHÀ ĐẸP HƠN</span></span>
     </a>
 </div>
 
