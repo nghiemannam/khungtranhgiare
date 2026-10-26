@@ -29,7 +29,7 @@ Không viết trùng chủ đề với bài đã có trong bai-viet/.
 ## Hàng đợi
 
 ### Nhóm Cho thuê giá vẽ (bài chính: bai-viet/cho-thue-gia-ve-tranh-tphcm.html, bai-viet/cho-thue-gia-ve-su-kien-trien-lam-tphcm.html)
-- [ ] cho-thue-gia-ve-quan-1-binh-thanh | cho thuê giá vẽ quận 1, Bình Thạnh
+- [x] cho-thue-gia-ve-quan-1-binh-thanh | cho thuê giá vẽ quận 1, Bình Thạnh (26/10/2026)
 - [ ] thue-gia-ve-khai-truong-cua-hang | thuê giá vẽ khai trương cửa hàng
 - [ ] thue-gia-ve-le-tot-nghiep | thuê giá vẽ lễ tốt nghiệp, sự kiện trường học
 - [ ] checklist-thue-gia-ve-su-kien | checklist chuẩn bị thuê giá vẽ sự kiện
@@ -80,3 +80,4 @@ Không viết trùng chủ đề với bài đã có trong bai-viet/.
 ## Nhật ký
 | Ngày | Bài | Ghi chú |
 |---|---|---|
+| 26/10/2026 | bai-viet/cho-thue-gia-ve-quan-1-binh-thanh.html | Lần chạy 1. Link ngược từ cho-thue-gia-ve-tranh-tphcm.html (thay mục workshop) |
