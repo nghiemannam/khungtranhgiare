@@ -31,7 +31,7 @@ Không viết trùng chủ đề với bài đã có trong bai-viet/.
 ### Nhóm Cho thuê giá vẽ (bài chính: bai-viet/cho-thue-gia-ve-tranh-tphcm.html, bai-viet/cho-thue-gia-ve-su-kien-trien-lam-tphcm.html)
 - [x] cho-thue-gia-ve-quan-1-binh-thanh | cho thuê giá vẽ quận 1, Bình Thạnh (26/10/2026)
 - [x] thue-gia-ve-khai-truong-cua-hang | thuê giá vẽ khai trương cửa hàng (27/10/2026)
-- [ ] thue-gia-ve-le-tot-nghiep | thuê giá vẽ lễ tốt nghiệp, sự kiện trường học
+- [x] thue-gia-ve-le-tot-nghiep | thuê giá vẽ lễ tốt nghiệp, sự kiện trường học (28/10/2026)
 - [ ] checklist-thue-gia-ve-su-kien | checklist chuẩn bị thuê giá vẽ sự kiện
 
 ### Nhóm Khung bằng khen A4 (bài chính: bai-viet/khung-bang-khen-a4.html, danh mục #khung-hinh-khung-anh)
@@ -82,3 +82,4 @@ Không viết trùng chủ đề với bài đã có trong bai-viet/.
 |---|---|---|
 | 26/10/2026 | bai-viet/cho-thue-gia-ve-quan-1-binh-thanh.html | Lần chạy 1. Link ngược từ cho-thue-gia-ve-tranh-tphcm.html (thay mục workshop) |
 | 27/10/2026 | bai-viet/thue-gia-ve-khai-truong-cua-hang.html | Lần chạy 2. Link ngược từ cho-thue-gia-ve-su-kien-trien-lam-tphcm.html (thay mục ảnh cưới) |
+| 28/10/2026 | bai-viet/thue-gia-ve-le-tot-nghiep.html | Lần chạy 3. Link ngược từ cho-thue-gia-ve-tan-phu-tan-binh.html (thay mục 1m3 hay 1m5) |
