@@ -35,7 +35,7 @@ Không viết trùng chủ đề với bài đã có trong bai-viet/.
 - [x] checklist-thue-gia-ve-su-kien | checklist chuẩn bị thuê giá vẽ sự kiện (30/10/2026)
 
 ### Nhóm Khung bằng khen A4 (bài chính: bai-viet/khung-bang-khen-a4.html, danh mục #khung-hinh-khung-anh)
-- [ ] khung-giay-khen-a4-cho-hoc-sinh | khung giấy khen A4 cho học sinh
+- [x] khung-giay-khen-a4-cho-hoc-sinh | khung giấy khen A4 cho học sinh (02/11/2026)
 - [ ] kich-thuoc-khung-bang-khen-a4 | kích thước khung bằng khen A4
 - [ ] khung-bang-khen-21x30 | khung bằng khen 21x30
 - [ ] khung-bang-khen-so-luong-lon-truong-hoc | mua khung bằng khen số lượng lớn cho trường học
@@ -84,3 +84,4 @@ Không viết trùng chủ đề với bài đã có trong bai-viet/.
 | 27/10/2026 | bai-viet/thue-gia-ve-khai-truong-cua-hang.html | Lần chạy 2. Link ngược từ cho-thue-gia-ve-su-kien-trien-lam-tphcm.html (thay mục ảnh cưới) |
 | 28/10/2026 | bai-viet/thue-gia-ve-le-tot-nghiep.html | Lần chạy 3. Link ngược từ cho-thue-gia-ve-tan-phu-tan-binh.html (thay mục 1m3 hay 1m5) |
 | 30/10/2026 | bai-viet/checklist-thue-gia-ve-su-kien.html | Lần chạy 4. Link ngược từ gia-thue-gia-ve-bao-nhieu.html (thay mục ảnh cưới) |
+| 02/11/2026 | bai-viet/khung-giay-khen-a4-cho-hoc-sinh.html | Lần chạy 5. Link ngược từ khung-bang-khen-a4.html (thay mục khung đen viền nhỏ) |
